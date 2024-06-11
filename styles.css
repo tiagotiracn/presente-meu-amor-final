@@ -1,0 +1,156 @@
+html{
+    font-family: helvetica, sans-serif;
+    background-color: lightgray;
+}
+
+.cabecalho{
+    background-color: #ea5747;
+    width: 100vw;
+    padding: 10px 0 10px 0;
+}
+
+.titulo-pagina{
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.apresentacao{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.titulo-apresentacao{
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    background-color: white;
+    padding: 20px;
+    width: 80vw;
+    border: 3px solid #ea5747;
+    border-radius: 18px;
+}
+
+.nossa-historia, .declaracao{
+    padding: 20px 30px 20px 30px;
+}
+.container-imagem{
+    display: flex;
+    justify-content: center;
+}
+
+.foto{
+    width: 80vw;
+    padding: 30px 0 5px 0;
+    text-align: center;
+}
+
+.texto-corrido, .poema{
+    line-height: 1.2;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.descricao-foto{
+    font-style: italic;
+    opacity: 0.8;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@keyframes coracao-animacao{
+    0% {width: 90px; height: 90px;}
+    25% {width: 100px; height: 100px;}
+    50% {width: 120px; height: 120px;}
+    75% {width: 100px; height: 100px;}
+    100% {width: 90px; height: 90px;}
+}
+
+@keyframes coracao-texto{
+    0% {font-size: 32px;}
+    25% {font-size: 40px;}
+    50% {font-size: 48px;}
+    75% {font-size: 40px;}
+    100% {font-size: 32px;}
+}
+
+.coracao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px;
+}
+
+.forma-heart-left, .forma-heart-right{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation-name: coracao-animacao;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 4s;
+}
+
+.forma-heart-left{
+    background-color: #ea5747;
+    transform: rotate(45deg);
+    border-left: 35px solid transparent;
+    right: 36%;
+}
+
+.forma-heart-right{
+    background-color: #ea5747;
+    transform: rotate(-45deg);
+    border-right: 35px solid transparent;
+    left: 36%;
+}
+
+.texto-heart{
+    z-index: 1;
+    font-size: 32px;
+    font-weight: 700;
+    animation-name: coracao-texto;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+.poema{
+    text-align: center;
+    padding: 20px 0 20px 0;;
+}
+
+.texto-footer{
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+footer{
+    background-color: #ea5747;
+    width: 100vw;
+    padding: 10px 0 10px 0;
+}
+/*
+.forma-heart-left{
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 45px solid red;
+}
+
+.forma-heart-right{
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 45px solid red;
+
+}
+
+*/
